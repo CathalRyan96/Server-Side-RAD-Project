@@ -1,3 +1,5 @@
+package com.ships.controllers;
+
 import java.util.ArrayList;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,15 +16,14 @@ public class ShipController {
 	@Autowired
 	ShipService s;
 	
+	
 
 	@RequestMapping(value = "/getShip", method=RequestMethod.GET)
 	public String getShip(Model model) {
-		ArrayList<Ship> ship = (ArrayList<Ship>) s.getAllShips();
-		model.addAttribute("customers", ship);
-		Ship s = new Ship();
-		s.setScid("TESTING");
-		model.addAttribute("cust", s);
-		return "allShips";
+		
+		ArrayList<Ship> ship = (ArrayList<Ship>) s.findAll();
+		model.addAttribute("ships", ship);
+		return "getShip";		
 	}
 
 }
