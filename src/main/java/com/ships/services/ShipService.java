@@ -1,5 +1,6 @@
 package com.ships.services;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,8 +13,8 @@ import com.ships.repositories.ShipRepository;
 public class ShipService {
 	@Autowired
 	ShipRepository s;
-	public List<Ship>findAll(){
-		return (List<Ship>) s.findAll();
+	public ArrayList<Ship>findAll(){
+		return (ArrayList<Ship>) s.findAll();
 	}
 }
 
