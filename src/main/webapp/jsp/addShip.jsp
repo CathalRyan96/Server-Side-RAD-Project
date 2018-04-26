@@ -38,6 +38,8 @@
 				<td><input type="submit" value="Add" /></td>
 			</tr>
 		</table>
+			<a href="/">Home Page</a>
+		
 	</form:form>
 </body>
 </html>

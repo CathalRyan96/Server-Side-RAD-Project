@@ -19,4 +19,8 @@ public class ShippingCompanyService {
 	public ArrayList<ShippingCompany>findAll(){
 		return (ArrayList<ShippingCompany>) shipCompanyRepository.findAll();
 	}
+	
+	public ShippingCompany save(ShippingCompany company) {
+		return shipCompanyRepository.save(company);
+	}
 }
