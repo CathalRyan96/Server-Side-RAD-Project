@@ -26,7 +26,7 @@ public class ShippingCompanyController {
 		
 		ArrayList<ShippingCompany> shipingCompanies = shippingCompanyService.findAll();
 		model.addAttribute("shippingCompanies", shipingCompanies);
-		return "showShippingComapany";		
+		return "showShippingCompanies";		
 	}
 
 }
