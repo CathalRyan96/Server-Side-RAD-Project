@@ -13,8 +13,14 @@ import com.ships.repositories.ShipRepository;
 public class ShipService {
 	@Autowired
 	ShipRepository s;
+	
+	//Takes info out of ship table in database
 	public ArrayList<Ship>findAll(){
 		return (ArrayList<Ship>) s.findAll();
+	}
+	
+	public Ship saveShip(Ship ship) {
+		return s.save(ship);
 	}
 }
 
