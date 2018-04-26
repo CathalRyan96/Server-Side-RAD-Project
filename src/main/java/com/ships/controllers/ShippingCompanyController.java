@@ -50,7 +50,7 @@ public class ShippingCompanyController {
 			
 			ArrayList<ShippingCompany> shipingCompanies = shippingCompanyService.findAll();
 			model.addAttribute("shipingCompanies",shipingCompanies);
-			return "showShips";
+			return "showShippingCompanies";
 		}
 		
 	}
