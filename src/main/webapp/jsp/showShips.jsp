@@ -11,7 +11,7 @@ table, th, td {
 }
 </style>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Show Ships</title>
 </head>
 <body>
 <h1>Ship</h1>
@@ -35,6 +35,6 @@ table, th, td {
 				</tr>
 			</c:forEach>
 		</table>
-
+	<a href="/">Home Page</a>
 </body>
 </html>
