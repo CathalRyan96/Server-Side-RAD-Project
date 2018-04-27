@@ -21,4 +21,8 @@ public class OrderInfoService {
 	public ArrayList<OrderInfo>findAll(){
 		return (ArrayList<OrderInfo>) orderInfoRepository.findAll();
 	}
+	
+	public OrderInfo addOrder(OrderInfo order) {
+		return orderInfoRepository.save(order);
+	}
 }

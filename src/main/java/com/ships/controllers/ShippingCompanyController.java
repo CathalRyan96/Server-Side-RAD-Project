@@ -41,7 +41,7 @@ public class ShippingCompanyController {
 	}
 	
 	@RequestMapping(value = "/addShippingCompany", method=RequestMethod.POST)
-	public String addShip(@Valid @ModelAttribute("addCompany") ShippingCompany p, BindingResult result, HttpServletRequest h, Model model) {
+	public String addShippingCompany(@Valid @ModelAttribute("addCompany") ShippingCompany p, BindingResult result, HttpServletRequest h, Model model) {
 		
 		if(result.hasErrors()) {
 			return "addShippingCompany";
